@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Champagne;
+    src: url(cac_champagne.woff) format('woff'),
+         url(cac_champagne.ttf) format('truetype');
+}
+
+/* HTML and Body Styles */
+html {
+    background-color: rgb(245, 245, 245); /* Light neutral background */
+}
+
+body {
+    margin: auto;
+    width: 95%;
+    max-width: 960px;
+    min-width: 640px;
+    background-color: rgb(230, 230, 230); /* Subtle gray */
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+}
+
+/* Page Header Styles */
+header img {
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid rgb(200, 200, 200); /* Divider for header */
+}
+
+header h1 {
+    background-color: rgb(80, 130, 180); /* Cool blue */
+    color: white;
+    font-family: Champagne, cursive;
+    font-size: 2.5em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Horizontal Navigation */
+nav.horizontalNavigation ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removes bullet points */
+    text-align: center; /* Centers navigation items */
+}
+
+nav.horizontalNavigation li {
+    display: inline-block; /* Align items horizontally */
+    margin: 0 5px; /* Spacing between items */
+}
+
+nav.horizontalNavigation a {
+    display: inline-block; /* Ensures the box fits content properly */
+    font-family: Champagne, cursive;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    color: white; /* Text color */
+    background-color: rgb(60, 90, 140); /* Background color */
+    padding: 12px 20px; /* Adjust padding for full coverage */
+    border-radius: 5px; /* Rounded corners */
+    line-height: normal; /* Reset line-height to avoid conflicts */
+}
+
+nav.horizontalNavigation a:link,
+nav.horizontalNavigation a:visited {
+    color: rgb(240, 240, 240); /* Subtle white */
+}
+
+nav.horizontalNavigation a:hover,
+nav.horizontalNavigation a:active {
+    background-color: rgb(40, 70, 120); /* Darker background on hover */
+}
+
+/* Main Section Styles */
+main {
+    background-color: rgb(255, 255, 255); /* White for contrast */
+    clear: both;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 15px;
+}
+
+/* Infographic Styles */
+div.infobox {
+    font-size: 1em;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: rgb(240, 240, 240); /* Neutral gray */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+div.infobox img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+div.infobox p {
+    color: rgb(60, 60, 60); /* Neutral dark text */
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Individual Infographic Sections */
+div#info1, div#info2, div#info3, div#info4, div#info5, div#info6, div#info7, div#info8 {
+    width: 100%; /* Default full-width */
+    margin-bottom: 15px;
+}
+
+div#info3, div#info6 {
+    background-color: rgb(200, 230, 250); /* Light blue */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+div#info4 p, div#info7 p {
+    color: rgb(80, 80, 80); /* Subtle dark gray */
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 1.5em;
+}
+
+div#info8 img {
+    float: left;
+    margin-right: 5%;
+    width: 35%;
+    border-radius: 8px;
+}
+
+div#info8 p {
+    float: left;
+    width: 60%;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: rgb(80, 80, 80);
+}
+
+/* Footer Styles */
+footer {
+    color: rgb(100, 100, 100); /* Neutral gray */
+    background-color: rgb(230, 230, 230); /* Subtle gray */
+    font-size: 0.9em;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 2px solid rgb(200, 200, 200); /* Subtle divider */
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

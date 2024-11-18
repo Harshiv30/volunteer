@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Champagne;
+    src: url(cac_champagne.woff) format('woff'),
+         url(cac_champagne.ttf) format('ttf');
+}
+
+/* HTML and Body Styles */
+
+html {
+    background-color: rgb(225, 245, 230); /* Light greenish-white */
+}
+
+body {
+    margin: 0 auto; /* Centered layout */
+    padding: 1em;
+    width: 95%;
+    max-width: 960px;
+    min-width: 640px;
+    background-color: rgb(190, 230, 200); /* Soft green */
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    border: 2px solid rgb(150, 200, 160); /* Subtle border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+}
+
+/* Page Header Styles */
+header img {
+    display: block;
+    width: 100%;
+    border-bottom: 4px solid rgb(150, 200, 160); /* Greenish divider */
+}
+
+header nav.horizontalNavigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+header nav.horizontalNavigation li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+header nav.horizontalNavigation a {
+    background-color: rgb(50, 130, 90); /* Deep green */
+    color: rgb(240, 255, 240); /* Light greenish-white */
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: Champagne, cursive;
+    font-size: 1.2em;
+}
+
+header nav.horizontalNavigation a:hover,
+header nav.horizontalNavigation a:active {
+    background-color: rgb(40, 110, 80); /* Slightly darker green */
+}
+
+/* Heading Styles */
+
+h1, h2, h3 {
+    margin: 1em 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.4em;
+    font-family: Champagne, cursive;
+    color: rgb(40, 110, 80); /* Dark green */
+}
+
+h2 {
+    font-size: 1.3em;
+    background-color: rgb(90, 160, 120); /* Muted green */
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.1em;
+    color: rgb(50, 130, 90); /* Deep green */
+}
+
+/* Paragraph Styles */
+
+p {
+    margin: 1em 0;
+    font-size: 1em;
+    color: rgb(40, 80, 60); /* Subtle dark green */
+    line-height: 1.5em;
+}
+
+/* Left Column Styles */
+
+section#leftColumn {
+    float: left;
+    width: 60%;
+    padding: 1em;
+}
+
+section#leftColumn img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Column Styles */
+
+section#rightColumn {
+    float: right;
+    width: 35%;
+    padding: 1em;
+    background-color: rgb(180, 220, 190); /* Soft green */
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Smooth shadow */
+}
+
+section#rightColumn h2 {
+    background-color: rgb(60, 120, 90); /* Darker green */
+    color: rgb(240, 255, 240); /* Light greenish-white */
+    border-radius: 5px;
+    padding: 0.5em;
+    text-align: center;
+}
+
+aside {
+    margin-top: 2em;
+}
+
+/* Footer Styles */
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+    background-color: rgb(50, 130, 90); /* Deep green */
+    color: rgb(240, 255, 240); /* Light greenish-white */
+    font-size: 0.9em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    clear: both;
+}
+
+/* Utility Classes */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
